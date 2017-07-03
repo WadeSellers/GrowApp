@@ -1,0 +1,15 @@
+
+language: objective-c
+osx_image: xcode7.1
+rvm: 1.9.3
+
+before_install:
+  - brew update
+  - brew upgrade xctool
+
+script:
+- xctool test -workspace Flowgro.xcworkspace -scheme Flowgro -sdk iphonesimulator9.1 
+
+
+
+
